@@ -1,4 +1,4 @@
-# 2017 Taiwan Matters Landing Page
+# Taiwan Matters 2017 Landing Page
 
 ## Design
 https://drive.google.com/drive/folders/0BziELc-Np_8AamI5RWJnXzNqTFk?fref=gc
