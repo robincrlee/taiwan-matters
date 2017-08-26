@@ -28,11 +28,7 @@ body {
 }
 
 a {
-  color: #17906a;
-}
-
-a:hover {
-  color: #007e00;
+  color: #b05b5f;
 }
 
 li {
@@ -69,17 +65,16 @@ li {
 }
 
 .navLinkSelected {
-  color: #17906a;
-  border-bottom: 5px solid #17906a;
+  color: #b05b5f;
 }
 
 .navLink:hover, .navLink:focus {
-  color: #17906a;
+  color: #b05b5f;
 }
 
 .navButton {
   background-color: #fff;
-  color: #17906a;
+  color: #b05b5f;
   height: 35px;
   width: 95px;
   line-height: 0;
@@ -90,7 +85,7 @@ li {
 }
 
 .navButton:hover, .navButton:active, .navButton:focus {
-  background-color: #17906a;
+  background-color: #b05b5f;
   color: #fff;
 }
 
@@ -113,7 +108,7 @@ li {
 
 .langLink:hover {
   text-decoration: underline;
-  color: #17906a;
+  color: #b05b5f;
 }
 
 .socialIcon {
@@ -219,7 +214,7 @@ li {
 
 .heading {
   font-family: 'DIN-Condensed';
-  color: #17906a;
+  color: #b05b5f;
   font-size: 32px;
   font-weight: 900;
   margin-top: 65px;
@@ -238,7 +233,7 @@ li {
 }
 
 .headingBottom {
-  border-bottom: 3px solid #17906a;
+  border-bottom: 3px solid #b05b5f;
   width: 63px;
   margin-left: 46.5%;
   z-index: -5;
@@ -251,7 +246,7 @@ li {
 .OTDProgramHeading {
   composes: contactHeading;
   color: #333;
-  border-bottom: 3px solid #17906a;
+  border-bottom: 3px solid #b05b5f;
   font-size: 17px;
   letter-spacing: 5px;
   font-weight: bolder;
@@ -495,7 +490,7 @@ li {
 }
 
 .infoLabel {
-  color: #17906a;
+  color: #b05b5f;
   font-weight: 600;
   margin: 10px 0 5px;
 }
@@ -902,7 +897,7 @@ li {
 }
 
 .greenDivider {
-  border-bottom: 5px solid #17906a;
+  border-bottom: 5px solid #b05b5f;
   height: 10px;
   width: 100%;
 }
@@ -966,13 +961,13 @@ li {
 }
 
 .headerItemResponsive a:hover {
-  color: #17906a;
+  color: #b05b5f;
 }
 
 /* Schedule Page */
 
 .scheduleControl {
-  border-bottom: 3px solid #17906a;
+  border-bottom: 3px solid #b05b5f;
   background-color: rgba(0,0,0,.12);
   display: flex;
 }
@@ -989,11 +984,11 @@ li {
 .scheduleDateSelected {
   composes: scheduleDate;
   color: #fff;
-  background-color: #17906a;
+  background-color: #b05b5f;
 }
 
 .scheduleDate:hover{
-  color: #17906a;
+  color: #b05b5f;
 }
 
 .scheduleDateSelected:hover{

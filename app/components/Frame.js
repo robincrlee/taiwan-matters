@@ -57,9 +57,6 @@ export default class Frame extends React.Component {
                 <Link to={toAbsPath(langPath, "contact")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Contact</Link>
               </Col>
               <Col md="3" className={styles.appBarExtra}>
-                <Link to="register">
-                  <Button color="primary" className={styles.navButton}>Register</Button>
-                </Link>
                 <Link className={styles.langLinkCh} to={toAbsPath("zh",relPath)}>中文</Link>
                 <span>|</span>
                 <Link className={styles.langLinkEn} to={toAbsPath("en",relPath)}>EN</Link>
