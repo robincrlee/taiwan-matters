@@ -41,11 +41,7 @@ export default class Frame extends React.Component {
             <Row>
               <Col md="5">
                 <Link to={toAbsPath(langPath, "")}>
-                  {
-                    viewPortWidth < 600 ?
-                      (<img src={smallLogo} className={styles.appBarLogo}/>) :
-                      (<img src={logo} className={styles.appBarLogo}/>)
-                  }
+                  <h3>Taiwan Matters</h3>
                 </Link>
                 <span
                   className={styles.hamburger}

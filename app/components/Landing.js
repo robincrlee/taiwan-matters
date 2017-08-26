@@ -10,7 +10,7 @@ import { Link } from 'react-router';
 
 import styles from '../styles.css';
 import heroImg from '../images/hero_big.jpg';
-// import heroImgSmall from '../images/hero_small.png';
+import heroImgSmall from '../images/hero_small.png';
 import logoMarker from '../images/map-07.png';
 import mapInfo from '../images/map_info.png';
 import dotImg from '../images/dot.png';
@@ -31,49 +31,14 @@ export default class Landing extends React.Component {
     return (
       <div>
         <div className={styles.landingHero}>
-          <img src={heroImg} alt="TACEC 2017 main image" className={styles.landingHeroImg}/>
+          <img src={heroImg} alt="Taiwan Matters" className={styles.landingHeroImg}/>
         </div>
         <Container className={styles.landingBody}>
           <Row>
             <Col md="10" md-offset="1">
               <h3 className={styles.heading}> GENERATIONS UNITED,<br/> TAIWANESE AMERICANS TOGETHER. </h3>
               {LandingData.welcomeMessage[lang]}
-              <div className={styles.homepageBoxContainer} style={isMobile ? {marginLeft: -10 + (viewPortWidth - 260) / 2} : {}}>
-                <Link to={toAbsPath(langPath, "schedule")}>
-                  <div className={styles.homepageBox} style={isMobile ? {borderBottom: 'none'} : {borderRight: 'none'}}>
-                    <h3 className={styles.hpBoxHeading}>TACEC<br/>PROGRAM</h3>
-                    <p className={styles.hpViewMore}> {LandingData.viewMore[lang]} </p>
-                    <img src={dotImg} style={{marginTop: -33}}/>
-                  </div>
-                </Link>
-                <a href='http://tangeneration.org/programs/' target='_blank'>
-                  <div className={styles.homepageBox} style={isMobile ? {borderBottom: 'none'} : {borderRight: 'none'}}>
-                    <h3 className={styles.hpBoxHeading}>TANG CONFERENCE</h3>
-                    <p className={styles.hpViewMore}> {LandingData.viewMore[lang]} </p>
-                    <img src={dotImg} style={{marginTop: -33}}/>
-                  </div>
-                </a>
-                <Link to={toAbsPath(langPath, "otd")}>
-                  <div className={styles.homepageBox}>
-                    <h3 className={styles.hpBoxHeading}>OTD<br/>SUMMIT</h3>
-                    <p className={styles.hpViewMore}> {LandingData.viewMore[lang]} </p>
-                    <img src={dotImg} style={{marginTop: -33}}/>
-                  </div>
-                </Link>
-              </div>
 	           </Col>
-            </Row>
-            <Row>
-              <Col md="4" md-offset="4">
-                <div className={styles.bodyTextAbout} style={{textAlign: 'center', marginTop: 90}}>
-                  {LandingData.deadlines[lang]}
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Link to="/register">
-                <Button color="primary" className={styles.OTDButton} style={{fontSize: 15}}>{LandingData.registerOnline[lang]}</Button>
-              </Link>
             </Row>
         </Container>
         {viewPortWidth < 700 && (

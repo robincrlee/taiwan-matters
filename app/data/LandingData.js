@@ -84,24 +84,6 @@ const LandingData = Object.freeze({
   registerOnline: {
     en: "Registration Details",
     zh: "報名詳情",
-  },
-  deadlines: {
-    en:
-      <div>  <b>Registration Deadlines: </b><br />
-        Early bird (paper): <b>Sun, April 30</b> <br />
-        Early bird (online): <b>Mon, May 15</b> <br />
-        Paper registration: <b>Mon, May 15</b> <br />
-        Online registration: <b>Wed, May 31</b> <br />
-        Late registration (online only): <b>Sat, June 10</b>
-      </div>,
-    zh:
-      <div><b>報名截止日期: </b><br />
-        早鳥 (紙本報名): <b>星期日, 四月 三十</b> <br />
-        早鳥 (線上報名): <b>星期一, 五月 十五</b> <br />
-        紙本報名: <b>星期一, 五月 十五</b> <br />
-        線上報名: <b>星期三, 五月 三十一</b> <br />
-        晚期報名 (僅限線上): <b>星期六, 六月 十號</b>
-      </div>
   }
 });
 
