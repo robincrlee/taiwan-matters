@@ -35,7 +35,7 @@ export default class Landing extends React.Component {
         <Container className={styles.landingBody}>
           <Row>
             <Col md="10" md-offset="1">
-              <h3 className={styles.heading}> GENERATIONS UNITED,<br/> TAIWANESE AMERICANS TOGETHER. </h3>
+              <h3 className={styles.heading}> TAIWAN MATTERS</h3>
               {LandingData.welcomeMessage[lang]}
 	           </Col>
             </Row>
@@ -77,7 +77,7 @@ export default class Landing extends React.Component {
         <Container className={styles.landingBody}>
 	  <Row>
 	    <Col md="4" md-offset="4">
-	      <h3 className={styles.heading}> ORGANIZERS </h3>
+	      <h3 className={styles.heading}> OUR FRIENDS </h3>
 	    </Col>
           </Row>
           <Row>
