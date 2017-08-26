@@ -52,7 +52,6 @@ export default class Frame extends React.Component {
               </Col>
               <Col md="4" className={styles.appBarNav}>
                 <Link to={toAbsPath(langPath, "about")} className={styles.navLink} activeClassName={styles.navLinkSelected}>About</Link>
-                <Link to={toAbsPath(langPath, "schedule")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Program</Link>
                 <Link to={toAbsPath(langPath, "speaker")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Speaker</Link>
                 <Link to={toAbsPath(langPath, "contact")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Contact</Link>
               </Col>

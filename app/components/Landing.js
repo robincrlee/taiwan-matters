@@ -10,11 +10,10 @@ import { Link } from 'react-router';
 
 import styles from '../styles.css';
 import heroImg from '../images/hero_big.jpg';
-import heroImgSmall from '../images/hero_small.png';
+// import heroImgSmall from '../images/hero_small.jpg';
 import logoMarker from '../images/map-07.png';
 import mapInfo from '../images/map_info.png';
 import dotImg from '../images/dot.png';
-import regForm from '../images/form.pdf';
 import GoogleMapReact from 'google-map-react';
 
 import { toAbsPath } from '../utils'

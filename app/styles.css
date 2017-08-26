@@ -66,6 +66,7 @@ li {
 
 .navLinkSelected {
   color: #b05b5f;
+  border-bottom: 5px solid #b05b5f;
 }
 
 .navLink:hover, .navLink:focus {

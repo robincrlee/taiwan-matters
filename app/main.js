@@ -3,11 +3,8 @@ import { render } from 'react-dom';
 import Frame from './components/Frame';
 import Landing from './components/Landing';
 import About from './components/About';
-import Schedule from './components/Schedule';
 import Speaker from './components/Speaker';
 import Contact from './components/Contact';
-import Register from './components/Register';
-import OTDProgram from './components/OTDProgram';
 import { Router, Route, IndexRoute, hashHistory, applyRouterMiddleware } from 'react-router';
 import { useScroll } from 'react-router-scroll';
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -18,11 +15,8 @@ const components = Object.freeze({
   landing: Landing,
   topPages: [
     {path: "about",    component: About},
-    {path: "schedule", component: Schedule},
     {path: "speaker",  component: Speaker},
-    {path: "contact",  component: Contact},
-    {path: "otd",      component: OTDProgram},
-    {path: "register",      component: Register},
+    {path: "contact",  component: Contact}
   ]
 });
 
