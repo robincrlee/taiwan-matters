@@ -154,6 +154,21 @@ li {
 
 .landingHero {
   composes: hero;
+  background-image:url(./images/home-cover-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #FFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.heroCopy h1{
+  font-size: 46px;
+  line-height: 1.2;
 }
 
 .aboutImgContainer {

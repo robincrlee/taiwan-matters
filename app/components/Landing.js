@@ -30,7 +30,12 @@ export default class Landing extends React.Component {
     return (
       <div>
         <div className={styles.landingHero}>
-          <img src={heroImg} alt="Taiwan Matters" className={styles.landingHeroImg}/>
+          <Container className={styles.heroCopy}>
+            <Col md="10" md-offset="1">
+              <h1>2017 United Nations Membership for Taiwan/Keep Taiwan Free March</h1>
+              <p>All members and allies of the Taiwanese community are invited to join this year's UN for Taiwan/ Keep Taiwan Free rally!</p>
+            </Col>
+          </Container>
         </div>
         <Container className={styles.landingBody}>
           <Row>
