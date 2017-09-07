@@ -64,6 +64,7 @@ li {
   color: #444;
   padding-bottom: 22px;
   font-family: 'DIN-Alternate';
+  text-transform: uppercase;
 }
 
 .navLinkSelected {

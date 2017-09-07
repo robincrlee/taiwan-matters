@@ -60,11 +60,6 @@ export default class Frame extends React.Component {
                 <Link to={toAbsPath(langPath, "facts")} className={styles.socialIcon}><img src={social_instagram} className={styles.appBarLogo}/></Link>
                 <Link to={toAbsPath(langPath, "facts")} className={styles.socialIcon}><img src={social_youtube} className={styles.appBarLogo}/></Link>
               </Col>
-              <Col md="2" className={styles.appBarExtra}>
-                <Link className={styles.langLinkCh} to={toAbsPath("zh",relPath)}>中文</Link>
-                <span>|</span>
-                <Link className={styles.langLinkEn} to={toAbsPath("en",relPath)}>EN</Link>
-              </Col>
             </Row>
           </div>
         </Appbar>
@@ -72,10 +67,7 @@ export default class Frame extends React.Component {
           this.state.showMenu &&
           <ul className={styles.dropDownUl}>
             <li className={styles.headerItemResponsive}><Link to={toAbsPath(langPath, "about")} onClick={this.handleHamburgerClick}>About</Link> </li>
-            <li className={styles.headerItemResponsive}><Link to={toAbsPath(langPath, "schedule")} onClick={this.handleHamburgerClick}>Program</Link> </li>
-            <li className={styles.headerItemResponsive}><Link to={toAbsPath(langPath, "speaker")} onClick={this.handleHamburgerClick}>Speaker</Link> </li>
-            <li className={styles.headerItemResponsive}><Link to={toAbsPath(langPath, "contact")} onClick={this.handleHamburgerClick}>Contact</Link> </li>
-            <li className={styles.headerItemResponsive}><Link to={toAbsPath((lang==="en"?"zh":"en"),relPath)} onClick={this.handleHamburgerClick}>{(lang==="en"?"中文":"English")}</Link> </li>
+            <li className={styles.headerItemResponsive}><Link to={toAbsPath(langPath, "facts")} onClick={this.handleHamburgerClick}>Facts</Link> </li>
           </ul>
         }
 	{children}
@@ -91,7 +83,7 @@ export default class Frame extends React.Component {
               </Col>
               <Col md="6">
                 <div className={styles.footerDisclaimer}>
-                  © 2017 Taiwan Matters. All Rights Reserved
+                  © 2017 Keep Taiwan Free.
                 </div>
               </Col>
             </Row>
