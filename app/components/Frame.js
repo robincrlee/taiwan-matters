@@ -6,11 +6,14 @@ import Col from 'muicss/lib/react/col';
 import { Link } from 'react-router';
 import Button from 'muicss/lib/react/button';
 import styles from '../styles.css';
-import logo from '../images/logo.png';
+import logo from '../images/ktf-logo.jpg';
 import smallLogo from '../images/logo_small.png';
 import Container from 'muicss/lib/react/container';
 import Dropdown from 'muicss/lib/react/dropdown';
 import DropdownItem from 'muicss/lib/react/dropdown-item';
+import social_facebook from '../images/social-facebook.png';
+import social_instagram from '../images/social-instagram.png';
+import social_youtube from '../images/social-youtube.png';
 
 import { toAbsPath, getRelPath } from '../utils'
 
@@ -39,9 +42,9 @@ export default class Frame extends React.Component {
         <Appbar className={styles.bar}>
           <div className={styles.headerContainer}>
             <Row>
-              <Col md="5">
+              <Col md="6">
                 <Link to={toAbsPath(langPath, "")}>
-                  <h3>Taiwan Matters</h3>
+                  <img src={logo} className={styles.appBarLogo}/>
                 </Link>
                 <span
                   className={styles.hamburger}
@@ -52,10 +55,12 @@ export default class Frame extends React.Component {
               </Col>
               <Col md="4" className={styles.appBarNav}>
                 <Link to={toAbsPath(langPath, "about")} className={styles.navLink} activeClassName={styles.navLinkSelected}>About</Link>
-                <Link to={toAbsPath(langPath, "speaker")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Speaker</Link>
-                <Link to={toAbsPath(langPath, "contact")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Contact</Link>
+                <Link to={toAbsPath(langPath, "facts")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Facts</Link>
+                <Link to={toAbsPath(langPath, "about")} className={styles.socialIcon}><img src={social_facebook} className={styles.appBarLogo}/></Link>
+                <Link to={toAbsPath(langPath, "facts")} className={styles.socialIcon}><img src={social_instagram} className={styles.appBarLogo}/></Link>
+                <Link to={toAbsPath(langPath, "facts")} className={styles.socialIcon}><img src={social_youtube} className={styles.appBarLogo}/></Link>
               </Col>
-              <Col md="3" className={styles.appBarExtra}>
+              <Col md="2" className={styles.appBarExtra}>
                 <Link className={styles.langLinkCh} to={toAbsPath("zh",relPath)}>中文</Link>
                 <span>|</span>
                 <Link className={styles.langLinkEn} to={toAbsPath("en",relPath)}>EN</Link>

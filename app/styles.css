@@ -44,11 +44,13 @@ li {
 
 .appBarLogo {
   display: inline-block;
+  width: 80px;
 }
 
 .appBarNav {
   padding-top: 23px;
   font-size: 15px;
+  text-align: right;
 }
 
 .appBarExtra {
