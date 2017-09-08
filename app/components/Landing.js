@@ -10,12 +10,9 @@ import { Link } from 'react-router';
 
 import styles from '../styles.css';
 import heroImg from '../images/hero_big.jpg';
-import logoMarker from '../images/map-07.png';
 import eventMarch from '../images/event-keep-taiwan-free-march.jpg'
 import eventTWMatters from '../images/event-taiwan-matters.jpg'
 import eventBubbleTea from '../images/event-bubble-tea.jpg'
-import mapInfo from '../images/map_info.png';
-import dotImg from '../images/dot.png';
 import GoogleMapReact from 'google-map-react';
 
 import { toAbsPath } from '../utils'
@@ -109,58 +106,6 @@ export default class Landing extends React.Component {
             </Row>
           </Container>
         </div>
-        {viewPortWidth < 700 && (
-        <img
-          src={mapInfo}
-          width="100%"
-        />)}
-        <div style={{height: 480, width: '100%'}}>
-          <GoogleMapReact
-             bootstrapURLKeys={{key: 'AIzaSyDeZuJsUlNfaMcKn0JBHDfMl2TzALkPwUk'}}
-             defaultCenter={mapCenter}
-             defaultZoom={10}
-             options={{draggable: false, zoomControl: false, scrollwheel: false, scaleControl: false, disableDoubleClickZoom: true}}
-             disableDefaultUI={true}
-           >
-             <div
-               lat={39.9518694}
-               lng={-75.602182}
-             >
-               <img
-                 src={logoMarker}
-                 width={60}
-               />
-             </div>
-             {viewPortWidth > 700 && (
-               <div
-                 lat={40.2201578}
-                 lng={-74.9695344}
-               >
-                 <img
-                   src={mapInfo}
-                 />
-               </div>
-             )}
-           </GoogleMapReact>
-         </div>
-        <Container className={styles.landingBody}>
-          <Row>
-            <Col md="4" md-offset="4">
-              <h3 className={styles.heading}> OUR FRIENDS </h3>
-            </Col>
-          </Row>
-          <Row>
-            {LandingData.organizers.map((organizer, index) =>
-              <Col md="4" key={index}>
-                <a href={organizer.link} target="_blank">
-                  <img src={organizer.logoImageSource} className={styles.hostLogo}
-                       alt={organizer.logoImageAlternativeText[lang]}
-                       {...organizer.logoImageExtraProps} />
-                </a>
-              </Col>
-            )}
-          </Row>
-        </Container>
       </div>
     );
   }
