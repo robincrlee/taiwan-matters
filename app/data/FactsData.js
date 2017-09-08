@@ -2,83 +2,68 @@ import React from 'react';
 
 import styles from '../styles.css';
 
-// import aboutImg from '../images/02_about_03.png';
-// import tacecLogo from '../images/tacec_logo.png';
-// import tangLogo from '../images/tang_logo.png';
-// import otdLogo from '../images/otd_logo.png';
-
-const textStyle = styles.bodyTextAbout
-
-function Paragraph (props) {
-  return <p className={textStyle}>{props.children}</p>
-}
-function Item (props) {
-  return <span className={textStyle}>{props.children}</span>
-}
-function Itemize (props) {
-  return <ul>{props.children.map((item, index) => <li key={index}>{item}</li>)}</ul>
-}
+import card1 from '../images/sdg-3.jpg';
+import card2 from '../images/sdg-5.jpg';
+import card3 from '../images/sdg-9.jpg';
+import card4 from '../images/sdg-10.jpg';
+import card5 from '../images/sdg-13.jpg';
+import card6 from '../images/sdg-16.jpg';
 
 // 同一個方框框 [ ] 包住的東西每一項必須有獨立的 key.
 // 可以是任何字串，只要同一個方框裡面都不一樣就好。
-
-// format of a person:
-// {
-//   name: string with lang support
-//   note: string with lang support (optional)
-//   phone: string (optional)
-//   email: string
-// }
-const ContactData = Object.freeze({
-  contacts: [
+const FactData = Object.freeze({
+  hero: {
+    title: ['UN Sustainable Development Goals:', 'How does Taiwan stack up?'],
+    subtitle: 'We shouldn’t have to do it alone… tell the UN the rest of the world is missing out on Taiwan. #KeepTaiwanFree #UNforTaiwan',
+  },
+  factCards: [
       {
-        title: {en: "TACEC", zh: "TACEC"},
-        subtitle: {
-          en: "TAIWANESE AMERICAN CONFERENCE / EAST COAST",
-          zh: "美東台灣人夏令會",
-        },
-        people: [
-          {
-            name: {en: "Minze Chien", zh: "Minze Chien"},
-            phone: "(703) 399-9888",
-            email: "minzechien.tacec@gmail.com",
-          },
-          {
-            name: {en: "Sue-Ching Lin", zh: "Sue-Ching Lin"},
-            note: {en: "(Registration only)", zh: "（註冊事宜）"},
-            email: "sclintacec@gmail.com",
-          }
+        cardImg: card1,
+        description: [
+          'Taiwan’s',
+          'universal healthcare system',
+          'is both cost-efficient and high-quality, with an 80% satisfaction rate. The system offers free choice of healthcare providers and, low copays, and home care.'
         ],
+        referenceLink: '#'
       },
       {
-        title: {en: "TANG", zh: "TANG"},
-        subtitle: {
-          en: "TAIWANESE AMERICAN NEXT GENERATION",
-          zh: "新生代臺美人協會",
-        },
-        people: [
-          {
-            name: {en: "Jenn Kao or Alex Chang", zh: "Jenn Kao 或 Alex Chang"},
-            email: "hello@tangeneration.org",
-          },
+        cardImg: card2,
+        description: [
+          'Based on the UN Gender Inequality Index, Taiwan had the',
+          '2nd highest gender equality ranking in the world in 2013,',
+          'due to female participation in politics, educational attainment, and workforce participation.'
         ],
+        referenceLink: '#'
       },
       {
-        title: {en: "OTD", zh: "OTD"},
-        subtitle: {
-          en: "OVERSEAS TAIWANESE FOR DEMOCRACY",
-          zh: "海外台灣青年陣線",
-        },
-        people: [
-          {
-            name: {en: "Yu-Chien Tseng", zh: "曾鈺茜"},
-            email: "crossover317@gmail.com",
-          },
-          {
-            name: {en: "Yen-Ting Liu", zh: "劉彥廷"},
-            email: "edsolitude@gmail.com",
-          }
-        ]
+        cardImg: card3,
+        description: ['In 2016, the Taiwanese government launched a new',
+          'industrial development policy based on promoting Taiwan’s existing “Five Innovative Industries”,',
+          'with a focus on developing new “green” materials and the circular economy.'],
+        referenceLink: '#'
+      },
+      {
+        cardImg: card4,
+        description: ['Taiwan routinely contributes funds for humanitarian assistance and disaster relief, as well as',
+          'knowledge sharing to improve infrastructure-',
+          'from farming in Haiti to improving access to institutions for vulnerable populations in Nepal.'],
+        referenceLink: '#'
+      },
+      {
+        cardImg: card5,
+        description: ['Despite being left out of UNFCCC discussions, Taiwan has implemented its own ambitious plans to',
+          'reduce carbon emissions and build sustainable communities,',
+          'as well as training experts around the world on building environmental protection capacities.'],
+        referenceLink: '#'
+      },
+      {
+        cardImg: card6,
+        description: [
+          'A',
+          'thriving and free civil society',
+          'keeps Taiwan’s democratic institutions robust and accountable. In early 2017, a historic court ruling made Taiwan',
+          'the first country in Asia to legalize gay marriage.'],
+        referenceLink: '#'
       }
     ]
 });
