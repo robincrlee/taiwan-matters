@@ -11,7 +11,7 @@ import card6 from '../images/sdg-16.jpg';
 
 // 同一個方框框 [ ] 包住的東西每一項必須有獨立的 key.
 // 可以是任何字串，只要同一個方框裡面都不一樣就好。
-const FactData = Object.freeze({
+const FactsData = Object.freeze({
   hero: {
     title: ['UN Sustainable Development Goals:', 'How does Taiwan stack up?'],
     subtitle: 'We shouldn’t have to do it alone… tell the UN the rest of the world is missing out on Taiwan. #KeepTaiwanFree #UNforTaiwan',
@@ -68,4 +68,4 @@ const FactData = Object.freeze({
     ]
 });
 
-export default ContactData;
+export default FactsData;
