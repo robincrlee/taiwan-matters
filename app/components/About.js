@@ -8,7 +8,6 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import { Link } from 'react-router';
 import styles from '../styles.css';
-import heroImg from '../images/hero_big.jpg';
 
 import AboutData from '../data/AboutData';
 

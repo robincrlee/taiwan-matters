@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from '../styles.css';
 
-import aboutImg from '../images/02_about_03.png';
-import tacecLogo from '../images/tacec_logo.png';
-import tangLogo from '../images/tang_logo.png';
-import otdLogo from '../images/otd_logo.png';
+// import aboutImg from '../images/02_about_03.png';
+// import tacecLogo from '../images/tacec_logo.png';
+// import tangLogo from '../images/tang_logo.png';
+// import otdLogo from '../images/otd_logo.png';
 
 const textStyle = styles.bodyTextAbout
 

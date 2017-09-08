@@ -9,20 +9,15 @@ import Col from 'muicss/lib/react/col';
 import { Link } from 'react-router';
 
 import styles from '../styles.css';
-import heroImg from '../images/hero_big.jpg';
 import eventMarch from '../images/event-keep-taiwan-free-march.jpg'
 import eventTWMatters from '../images/event-taiwan-matters.jpg'
 import eventBubbleTea from '../images/event-bubble-tea.jpg'
 import GoogleMapReact from 'google-map-react';
 
-import { toAbsPath } from '../utils'
-
 import LandingData from '../data/LandingData'
 
 export default class Landing extends React.Component {
   render() {
-    const langPath = this.props.lang;
-    const lang = langPath || "en";
     const viewPortWidth = window.innerWidth;
     const isMobile = viewPortWidth < 600;
     const mapCenter = isMobile ? [39.9518694, -75.602182] : [39.9662578,-75.1395344];
@@ -32,7 +27,7 @@ export default class Landing extends React.Component {
           <Container className={styles.heroCopy}>
             <Col md="10" md-offset="1">
               <h1>2017 United Nations Membership for Taiwan/Keep Taiwan Free March</h1>
-              <p>All members and allies of the Taiwanese community are invited to join this year's UN for Taiwan/ Keep Taiwan Free rally!</p>
+              <p>All members and allies of the Taiwanese community are invited to join this year’s UN for Taiwan/ Keep Taiwan Free rally!</p>
               <a className={styles.mainBtn} href={LandingData.links.fbEvent} target="_blank">GET INVOLVED</a>
             </Col>
           </Container>

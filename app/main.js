@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Frame from './components/Frame';
 import Landing from './components/Landing';
 import About from './components/About';
-import Facts from './components/Contact';
+import Facts from './components/Facts';
 import { Router, Route, IndexRoute, hashHistory, applyRouterMiddleware } from 'react-router';
 import { useScroll } from 'react-router-scroll';
 import injectTapEventPlugin from 'react-tap-event-plugin';
