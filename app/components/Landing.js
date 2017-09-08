@@ -33,7 +33,7 @@ export default class Landing extends React.Component {
           <Container className={styles.heroCopy}>
             <Col md="10" md-offset="1">
               <h1>2017 United Nations Membership for Taiwan/Keep Taiwan Free March</h1>
-              <p>All members and allies of the Taiwanese community are invited to join this year's UN for Taiwan/ Keep Taiwan Free rally!</p>
+              <p>All members and allies of the Taiwanese community are invited to join this year‘s UN for Taiwan/ Keep Taiwan Free rally!</p>
             </Col>
           </Container>
         </div>

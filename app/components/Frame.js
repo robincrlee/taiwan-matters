@@ -12,9 +12,10 @@ import Container from 'muicss/lib/react/container';
 import Dropdown from 'muicss/lib/react/dropdown';
 import DropdownItem from 'muicss/lib/react/dropdown-item';
 import socialFacebook from '../images/social-facebook.png';
-// TODO: instagram and youtube links avaialable?
-import socialInstagram from '../images/social-instagram.png';
 import socialYoutube from '../images/social-youtube.png';
+
+const fbLink = "https://www.facebook.com/KeepTaiwanFree/";
+const youtubeLink = "https://www.youtube.com/channel/UCyz03iSQ6BZXOIFXSo0JDWQ";
 
 export default class Frame extends React.Component {
   constructor(props) {
@@ -52,9 +53,8 @@ export default class Frame extends React.Component {
               <Col md="4" className={styles.appBarNav}>
                 <Link to="about" className={styles.navLink} activeClassName={styles.navLinkSelected}>About</Link>
                 <Link to="facts" className={styles.navLink} activeClassName={styles.navLinkSelected}>Facts</Link>
-                <a href="https://www.facebook.com/KeepTaiwanFree/" target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
-                <a href="#" className={styles.socialIcon}><img src={socialInstagram} className={styles.appBarLogo}/></a>
-                <a href="#" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
+                <a href={fbLink} target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
+                <a href={youtubeLink} target="_blank" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
               </Col>
             </Row>
           </div>
@@ -65,9 +65,8 @@ export default class Frame extends React.Component {
             <li className={styles.headerItemResponsive}><Link to="about" onClick={this.handleHamburgerClick}>About</Link></li>
             <li className={styles.headerItemResponsive}><Link to="facts" onClick={this.handleHamburgerClick}>Facts</Link></li>
             <li className={styles.headerItemResponsive}>
-                <a href="https://www.facebook.com/KeepTaiwanFree/" target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
-                <a href="#" className={styles.socialIcon}><img src={socialInstagram} className={styles.appBarLogo}/></a>
-                <a href="#" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
+                <a href={fbLink} target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
+                <a href={youtubeLink} target="_blank" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
             </li>
           </ul>
         }
