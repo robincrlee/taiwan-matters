@@ -7,10 +7,8 @@ import { Link } from 'react-router';
 import Button from 'muicss/lib/react/button';
 import styles from '../styles.css';
 import logo from '../images/ktf-logo.jpg';
-import smallLogo from '../images/logo_small.png';
 import Container from 'muicss/lib/react/container';
 import Dropdown from 'muicss/lib/react/dropdown';
-import DropdownItem from 'muicss/lib/react/dropdown-item';
 import socialFacebook from '../images/social-facebook.png';
 import socialYoutube from '../images/social-youtube.png';
 
@@ -33,7 +31,6 @@ export default class Frame extends React.Component {
 
   render() {
     const { children } = this.props;
-    const viewPortWidth = window.innerWidth;
     return (
       <div>
         <Appbar>
@@ -65,29 +62,39 @@ export default class Frame extends React.Component {
             <li className={styles.headerItemResponsive}><Link to="about" onClick={this.handleHamburgerClick}>About</Link></li>
             <li className={styles.headerItemResponsive}><Link to="facts" onClick={this.handleHamburgerClick}>Facts</Link></li>
             <li className={styles.headerItemResponsive}>
-                <a href={fbLink} target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
-                <a href={youtubeLink} target="_blank" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
+              <a href={fbLink} target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
+              <a href={youtubeLink} target="_blank" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
             </li>
           </ul>
         }
 	{children}
         <Appbar className={styles.footer}>
-          <Container>
+          <div>
             <Row>
-              <Col md="6">
-                {
-                  viewPortWidth < 600 ?
-                    (<img src={smallLogo} className={styles.footerLogo}/>) :
-                    (<img src={logo} className={styles.footerLogo}/>)
-                }
-              </Col>
-              <Col md="6">
-                <div className={styles.footerDisclaimer}>
-                  © 2017 Keep Taiwan Free.
+              <Col md="12">
+                <div className={styles.footerContact}>
+                  <h3>CONTACT US</h3>
+                  <h1>We’d like to hear from you.</h1>
+                  <h3>Email Us</h3>
+                  <p><a href="mailto:un4tw.keeptaiwanfree@gmail.com">un4tw.keeptaiwanfree@gmail.com</a></p>
+                  <h3>Follow Us</h3>
+                  <div>
+                    <a href={fbLink} target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
+                    <a href={youtubeLink} target="_blank" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
+                  </div>
                 </div>
               </Col>
             </Row>
-          </Container>
+          </div>
+          <div>
+            <Row>
+              <Col md="12">
+                <div className={styles.footerCopyright}>
+                  Copyright © 2017 Keep Taiwan Free
+                </div>
+              </Col>
+            </Row>
+          </div>
         </Appbar>
       </div>
     );

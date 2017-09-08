@@ -21,7 +21,7 @@ body {
   line-height: 1.8;
 }
 
-a {
+a, a:hover, a:focus {
   color: #44b696;
 }
 
@@ -349,34 +349,33 @@ li {
   }
 }
 
-
 .icon {
   height: 65px;
 }
 
+/* Footer Footer */
+
 .footer {
   background-color: #333;
+  text-align: center;
 }
 
-.footerDisclaimer {
-  margin-top: 50px;
-  color: #999999;
-  font-size: 12px;
-  float:right;
+.footerContact {
+  padding: 30px 0;
+  color: #fff;
 }
 
-@media (max-width: 780px) {
-  .footerDisclaimer {
-    margin-top: 0px;
-    float:left;
-    margin-bottom: 50px;
-  }
+.footerContact h3 {
+  font-size: 16px;
 }
 
-.footerLogo {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.footerCopyright {
+  background-color: #000;
+  color: #999;
+  padding: 20px 0;
 }
+
+/* End Footer */
 
 .hostLogo {
   margin-bottom: 50px;
