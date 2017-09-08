@@ -94,6 +94,10 @@ li {
 .hero {
   position: relative;
   overflow: hidden;
+  text-align: center;
+  color: #FFF;
+  padding: 100px 0;
+  font-size: 22px; 
 }
 
 .landingHero {
@@ -102,11 +106,6 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  text-align: center;
-  color: #FFF;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-size: 22px;
   font-weight: lighter;
 }
 
@@ -116,11 +115,6 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  text-align: center;
-  color: #FFF;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-size: 22px;
   font-weight: 300;
   line-height: 1.27;
 }
@@ -419,7 +413,7 @@ li {
   height: 65px;
 }
 
-/* Footer Footer */
+/* Footer */
 
 .footer {
   background-color: #333;
@@ -646,3 +640,67 @@ li {
   margin-top: 65px;
   max-width: 100%;
 }
+
+/* End About page */
+
+/* Facts page */
+
+.factsHero {
+  composes: hero;
+  background-color: #458ccc;
+}
+
+.factsHeroIcon {
+  width: 195px;
+}
+
+.factCards {
+  margin-bottom: 30px;
+}
+
+.factCard {
+  /*width: 370px;*/
+  margin: 15px 0;
+  height: 590px;
+}
+
+.factCardImg {
+  width: 340px;
+  height: 340px;
+}
+
+.factDesc {
+  padding: 15px;
+  color: #fff;
+}
+
+.factCard1 {
+  composes: factCard;
+  background-color: #279b48;
+}
+
+.factCard2 {
+  composes: factCard;
+  background-color: #ef402b;
+}
+
+.factCard3 {
+  composes: factCard;
+  background-color: #f36d25;
+}
+
+.factCard4 {
+  composes: factCard;
+  background-color: #e11484;
+}
+
+.factCard5 {
+  composes: factCard;
+  background-color: #48773e; 
+}
+
+.factCard6 {
+  composes: factCard;
+  background-color: #02558b;
+}
+

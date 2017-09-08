@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from '../styles.css';
 
+import unTwImg from '../images/un-tw.png';
 import card1 from '../images/sdg-3.jpg';
 import card2 from '../images/sdg-5.jpg';
 import card3 from '../images/sdg-9.jpg';
@@ -13,6 +14,7 @@ import card6 from '../images/sdg-16.jpg';
 // 可以是任何字串，只要同一個方框裡面都不一樣就好。
 const FactsData = Object.freeze({
   hero: {
+    icon: unTwImg,
     title: ['UN Sustainable Development Goals:', 'How does Taiwan stack up?'],
     subtitle: 'We shouldn’t have to do it alone… tell the UN the rest of the world is missing out on Taiwan. #KeepTaiwanFree #UNforTaiwan',
   },
