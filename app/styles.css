@@ -179,8 +179,18 @@ li {
 
 
 .landingBody {
-  text-align: center;
+  text-align: left;
   margin-bottom: 60px;
+}
+
+.landingBody h2 {
+  font-size: 36px;
+  font-weight: 600;
+	margin: 0 0 20px;
+}
+
+.landingBody .bodyText {
+	width: 370px;
 }
 
 .pageBody {
@@ -191,13 +201,10 @@ li {
 .heading {
   font-family: Montserrat;
   color: #44b696;
-  font-size: 32px;
-  font-weight: 900;
-  margin-top: 65px;
-  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 36px;
-  letter-spacing: 1px;
-  text-align: center;
+  text-align: left;
 }
 
 .contactHeading {
@@ -217,6 +224,12 @@ li {
   margin-bottom: 40px;
 }
 
+.mainBtn {
+  background-color: #44b696;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+}
 
 /* Home Page Host Box */
 .homepageBox {

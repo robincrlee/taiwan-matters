@@ -10,7 +10,6 @@ import { Link } from 'react-router';
 
 import styles from '../styles.css';
 import heroImg from '../images/hero_big.jpg';
-// import heroImgSmall from '../images/hero_small.jpg';
 import logoMarker from '../images/map-07.png';
 import mapInfo from '../images/map_info.png';
 import dotImg from '../images/dot.png';
@@ -33,17 +32,20 @@ export default class Landing extends React.Component {
           <Container className={styles.heroCopy}>
             <Col md="10" md-offset="1">
               <h1>2017 United Nations Membership for Taiwan/Keep Taiwan Free March</h1>
-              <p>All members and allies of the Taiwanese community are invited to join this year‘s UN for Taiwan/ Keep Taiwan Free rally!</p>
+              <p>All members and allies of the Taiwanese community are invited to join this year's UN for Taiwan/ Keep Taiwan Free rally!</p>
+              <a className={styles.mainBtn} href={LandingData.links.fbEvent} target="_blank">GET INVOLVED</a>
             </Col>
           </Container>
         </div>
         <Container className={styles.landingBody}>
           <Row>
             <Col md="10" md-offset="1">
-              <h3 className={styles.heading}> TAIWAN MATTERS</h3>
-              {LandingData.welcomeMessage[lang]}
-	           </Col>
-            </Row>
+              <h3 className={styles.heading}>ABOUT THE MOVEMENT</h3>
+              <h2>Keep Taiwan Free</h2>
+              {LandingData.welcomeMessage}
+              <Link to="about" className={styles.mainBtn} target="_blank">LEARN MORE</Link>
+            </Col>
+          </Row>
         </Container>
         {viewPortWidth < 700 && (
         <img
@@ -80,10 +82,10 @@ export default class Landing extends React.Component {
            </GoogleMapReact>
          </div>
         <Container className={styles.landingBody}>
-	  <Row>
-	    <Col md="4" md-offset="4">
-	      <h3 className={styles.heading}> OUR FRIENDS </h3>
-	    </Col>
+          <Row>
+            <Col md="4" md-offset="4">
+              <h3 className={styles.heading}> OUR FRIENDS </h3>
+            </Col>
           </Row>
           <Row>
             {LandingData.organizers.map((organizer, index) =>
@@ -95,7 +97,7 @@ export default class Landing extends React.Component {
                 </a>
               </Col>
             )}
-	  </Row>
+          </Row>
         </Container>
       </div>
     );
