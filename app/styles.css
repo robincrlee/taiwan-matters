@@ -5,15 +5,14 @@ html, body {
 }
 
 @font-face {
-   font-family: 'DIN-Condensed';
-   src: url('./fonts/DIN-Condensed-Bold.ttf'); /* Safari, Android, iOS */
+  font-family: 'DIN-Condensed';
+  src: url('./fonts/DIN-Condensed-Bold.ttf'); /* Safari, Android, iOS */
  }
 
- @font-face {
-    font-family: 'DIN-Alternate';
-    src: url('./fonts/DIN-Alternate-Bold.ttf'); /* Safari, Android, iOS */
-  }
-
+@font-face {
+  font-family: 'DIN-Alternate';
+  src: url('./fonts/DIN-Alternate-Bold.ttf'); /* Safari, Android, iOS */
+}
 
 body {
   font-family: 'Open Sans',sans-serif;
@@ -21,27 +20,15 @@ body {
   line-height: 1.8;
 }
 
-
-.linkDecorated {
-  text-decoration: underline;
-  color: #333;
-}
-
 a {
-  color: #b05b5f;
+  color: #44b696;
 }
 
 li {
   text-align: left;
 }
 
-
 /* App nav bar */
-
-.bar {
-  border-bottom: 1px solid rgba(0,0,0,.12);
-}
-
 .appBarLogo {
   display: inline-block;
   width: 80px;
@@ -49,12 +36,6 @@ li {
 
 .appBarNav {
   padding-top: 23px;
-  font-size: 15px;
-  text-align: right;
-}
-
-.appBarExtra {
-  padding-top: 17px;
   font-size: 15px;
   text-align: right;
 }
@@ -68,17 +49,17 @@ li {
 }
 
 .navLinkSelected {
-  color: #b05b5f;
-  border-bottom: 5px solid #b05b5f;
+  color: #44b696;
+  border-bottom: 5px solid #44b696;
 }
 
 .navLink:hover, .navLink:focus {
-  color: #b05b5f;
+  color: #44b696;
 }
 
 .navButton {
   background-color: #fff;
-  color: #b05b5f;
+  color: #44b696;
   height: 35px;
   width: 95px;
   line-height: 0;
@@ -89,7 +70,7 @@ li {
 }
 
 .navButton:hover, .navButton:active, .navButton:focus {
-  background-color: #b05b5f;
+  background-color: #44b696;
   color: #fff;
 }
 
@@ -112,7 +93,7 @@ li {
 
 .langLink:hover {
   text-decoration: underline;
-  color: #b05b5f;
+  color: #44b696;
 }
 
 .socialIcon {
@@ -233,7 +214,7 @@ li {
 
 .heading {
   font-family: 'DIN-Condensed';
-  color: #b05b5f;
+  color: #44b696;
   font-size: 32px;
   font-weight: 900;
   margin-top: 65px;
@@ -252,7 +233,7 @@ li {
 }
 
 .headingBottom {
-  border-bottom: 3px solid #b05b5f;
+  border-bottom: 3px solid #44b696;
   width: 63px;
   margin-left: 46.5%;
   z-index: -5;
@@ -260,121 +241,6 @@ li {
   margin-bottom: 40px;
 }
 
-/* OTD Program */
-
-.OTDProgramHeading {
-  composes: contactHeading;
-  color: #333;
-  border-bottom: 3px solid #b05b5f;
-  font-size: 17px;
-  letter-spacing: 5px;
-  font-weight: bolder;
-  margin-bottom: 0;
-}
-
-.OTDProgramSubHeading {
-  font-size: 12px;
-  margin-left: 20px;
-  letter-spacing: 1px;
-  font-family: 'Open Sans',sans-serif;
-  font-weight: lighter;
-}
-
-.OTDProgramBody {
-  height: 75px;
-  border-bottom: 1px solid rgba(0,0,0,.12);
-  padding-top: 2%;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.OTDProgramSpeakers {
-  float: right;
-  text-align: right;
-}
-
-.OTDPlusSign {
-  width: 16px;
-  height: 16px;
-  margin-top: 5px;
-  margin-right: 17px;
-}
-
-.OTDProgramDesc {
-  color: #64a680;
-  font-size: 16px;
-  font-weight: bolder;
-  text-align: left;
-}
-
-.OTDProgramDetails {
-  background-color: rgb(234, 235, 236);
-  overflow: hidden;
-  width: 100%;
-  text-align: left;
-}
-
-.OTDButton {
-  width: 200px;
-  height: 40px;
-  font-size: 18px;
-  border-width: 3px;
-  line-height: initial;
-  letter-spacing: 0.03em;
-  font-family: 'DIN-Alternate';
-}
-
-.otdImg {
-  composes: aboutImg;
-  margin-left: 7%;
-}
-
-@media (max-width: 520px) {
-  .otdImg {
-    margin-left: -30%;
-    width: 150%;
-    height: auto;
-  }
-
-  .OTDProgramBody {
-    height: 115px;
-  }
-
-  .OTDProgramSpeakers {
-    float: none;
-  }
-
-  .OTDProgramDetails {
-    overflow: scroll;
-  }
-}
-
-@media (max-width: 900px) and (min-width: 520px) {
-  .otdImg {
-    margin-left: -30%;
-    width: 150%;
-    height: auto;
-  }
-
-  .OTDProgramBody {
-    height: 75px;
-  }
-
-  .OTDProgramDetails {
-    overflow: scroll;
-  }
-}
-
-/* End OTD Program */
-
-/* Registration Page */
-
-.registerSubheading {
-  color: #64a680;
-  font-size: 18px;
-  margin-top: 50px;
-  margin-bottom: 15px;
-}
 
 /* Home Page Host Box */
 .homepageBox {
@@ -426,46 +292,6 @@ li {
 
 /* End Home Page Box */
 
-/* OTD Subsidy Pop Up */
-
-.popupBoxContainer {
-  composes: homepageBoxContainer;
-  margin-top: 0;
-}
-
-.popupBox {
-  composes: homepageBox;
-  width: 300px;
-  height: 200px;
-  padding: 20px
-}
-
-@media (max-width: 520px) {
-  .popupBox {
-    width: 100%;
-    height: 240px;
-  }
-
-  .popupBoxContainer {
-    display: block;
-    margin-left: 0;
-  }
-}
-
-/* END Pop Up */
-
-.dlFormButton {
-  composes: OTDButton;
-  width: 365px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  height: 60px;
-  font-size: 16px;
-  font-weight: bolder;
-  font-family: 'DIN-Alternate';
-  letter-spacing: 1px;
-}
-
 .bodyText {
   color: #444;
   font-size: 16px;
@@ -509,7 +335,7 @@ li {
 }
 
 .infoLabel {
-  color: #b05b5f;
+  color: #44b696;
   font-weight: 600;
   margin: 10px 0 5px;
 }
@@ -553,339 +379,6 @@ li {
   height: 65px;
 }
 
-.speakerHeader, .speakerSection {
-  background-color: #efedee;
-}
-
-.speakerBg {
-  background-color: #efedee;
-}
-
-.speakerHeader {
-  padding-top: 30px;
-}
-
-.speakerCard {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-/* Speaker Img */
-
-.speakerImg {
-  height: 300px;
-  background-color: #444;
-}
-
-.speakerDetail {
-  margin-left: 140px;
-  width: 470px;
-}
-
-.speakerImgLiu {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Liu.jpg') no-repeat center center;
-}
-
-.speakerImgWu {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Wu.jpg') no-repeat center center;
-}
-
-.speakerImgHsu {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Hsu.jpg') no-repeat center center;
-}
-
-.speakerImgDu {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Du.jpg') no-repeat center center;
-}
-
-.speakerImgLinMY {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LinMY.jpg') no-repeat center center;
-}
-
-.speakerImgLinYJ {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LinYJ.jpg') no-repeat center center;
-}
-
-.speakerImgWuJY {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/WuJY.jpg') no-repeat center center;
-}
-
-.speakerImgLinJ {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LinJ.jpg') no-repeat center center;
-}
-
-.speakerImgMiao {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Miao.jpg') no-repeat center center;
-}
-
-.speakerImgHsiao {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Hsiao.jpg') no-repeat center center;
-}
-
-.speakerImgChiu {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Chiu.jpg') no-repeat center center;
-}
-
-.speakerImgYaoCW {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/YaoCW.jpg') no-repeat center center;
-}
-
-.speakerImgYanMW {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/YanMW.jpg') no-repeat center center;
-}
-
-/* OTD speakers */
-.speakerImgYangYT {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/YangYT.jpg') no-repeat center center;
-}
-
-.speakerImgYangYH {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/YangYH.jpg') no-repeat center center;
-}
-
-.speakerImgWuPY {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/WuPY.jpg') no-repeat center center;
-}
-
-.speakerImgWuHH {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/WuHH.jpg') no-repeat center center;
-}
-
-.speakerImgWangWC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/WangWC.jpeg') no-repeat center center;
-}
-
-.speakerImgWangCZ {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/WangCZ.jpg') no-repeat center center;
-}
-
-.speakerImgTsaoHY {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/TsaoHY.jpeg') no-repeat center center;
-}
-
-.speakerImgTsaiWN {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/TsaiWN.jpg') no-repeat center center;
-}
-
-.speakerImgTsaiMF {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/TsaiMF.jpg') no-repeat center center;
-}
-
-.speakerImgTsaiDK {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/TsaiDK.jpg') no-repeat center center;
-}
-
-.speakerImgTangF {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/TangF.jpg') no-repeat center center;
-}
-
-.speakerImgPengYC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/PengYC.jpg') no-repeat center center;
-}
-
-.speakerImgOuyang {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Ouyang.jpg') no-repeat center center;
-}
-
-
-/* more */
-.speakerImgMichaelF {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/MichaelF.jpg') no-repeat center center;
-}
-
-.speakerImgLoHC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LoHC.jpg') no-repeat center center;
-}
-
-.speakerImgLiuYB {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LiuYB.jpg') no-repeat center center;
-}
-
-.speakerImgLinYC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LinYC.png') no-repeat center center;
-}
-
-.speakerImgLinWC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LinWC.jpg') no-repeat center center;
-}
-
-.speakerImgLinHMH {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LinHMH.jpg') no-repeat center center;
-}
-
-.speakerImgLiHC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LiHC.jpg') no-repeat center center;
-}
-
-.speakerImgLamC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LamC.jpg') no-repeat center center;
-}
-
-.speakerImgLaiCC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LaiCC.jpg') no-repeat center center;
-}
-
-.speakerImgJohnNJ {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/JohnNJ.jpg') no-repeat center center;
-}
-
-.speakerImgHuangYH {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/HuangYH.jpg') no-repeat center center;
-}
-
-.speakerImgHuangMY {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/HuangMY.jpg') no-repeat center center;
-}
-
-.speakerImgHuangCS {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/HuangCS.jpg') no-repeat center center;
-}
-
-/* more */
-
-.speakerImgHsuHC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/HsuHC.jpg') no-repeat center center;
-}
-
-.speakerImgHsiehBL {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/HsiehBL.png') no-repeat center center;
-}
-
-.speakerImgHsiaoR {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/HsiaoR.jpg') no-repeat center center;
-}
-
-.speakerImgHongCL {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/HongCL.jpg') no-repeat center center;
-}
-
-.speakerImgGvdW {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/GvdW.jpg') no-repeat center center;
-}
-
-.speakerImgChoCJ {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/ChoCJ.jpg') no-repeat center center;
-}
-
-.speakerImgChiuTP {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/ChiuTP.jpg') no-repeat center center;
-}
-
-.speakerImgChenYS {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/ChenYS.jpg') no-repeat center center;
-}
-
-.speakerImgChenTS {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/ChenTS.jpg') no-repeat center center;
-}
-
-.speakerImgChangCH {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/ChangCH.jpg') no-repeat center center;
-}
-
-/* last batch */
-.speakerImgLiMC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LiMC.jpg') no-repeat center center;
-}
-
-.speakerImgLinZY {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LinZY.jpg') no-repeat center center;
-}
-
-.speakerImgLuHC {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/LuHC.jpg') no-repeat center center;
-}
-
-.speakerImgChiangN {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/ChiangN.jpg') no-repeat center center;
-}
-
-.speakerImgChen {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Chen.jpg') no-repeat center center;
-}
-
-.speakerImgChong {
-  composes: speakerImg;
-  background: url('./data/speaker-profile/Chong.jpg') no-repeat center center;
-}
-
-.speakerInfo {
-  background-color: #fff;
-  padding: 15px 20px;
-  min-height: 140px;
-}
-
-.speakerTitle {
-  composes: heading;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: left;
-  margin: 0;
-}
-
-
-.speakerSubtitle {
-  composes: speakerTitle;
-  color: #9bd07c;
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 28px;
-}
-
 .footer {
   background-color: #333;
 }
@@ -910,28 +403,8 @@ li {
   margin-bottom: 20px;
 }
 
-
 .hostLogo {
   margin-bottom: 50px;
-}
-
-.greenDivider {
-  border-bottom: 5px solid #b05b5f;
-  height: 10px;
-  width: 100%;
-}
-
-.speakerBio {
-  margin: 30px 0;
-}
-
-.speakerAvatar {
-  width: 275px;
-  height: 275px;
-  border-radius: 50%;
-  background-size: cover;
-  filter: grayscale(100%);
-  margin-bottom: 10px
 }
 
 .iceDivider {
@@ -980,76 +453,8 @@ li {
 }
 
 .headerItemResponsive a:hover {
-  color: #b05b5f;
+  color: #44b696;
 }
-
-/* Schedule Page */
-
-.scheduleControl {
-  border-bottom: 3px solid #b05b5f;
-  background-color: rgba(0,0,0,.12);
-  display: flex;
-}
-
-.scheduleDate {
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 700;
-  padding: 16px 28px;
-  cursor: pointer;
-  color: #444;
-}
-
-.scheduleDateSelected {
-  composes: scheduleDate;
-  color: #fff;
-  background-color: #b05b5f;
-}
-
-.scheduleDate:hover{
-  color: #b05b5f;
-}
-
-.scheduleDateSelected:hover{
-  color: #FFF;
-}
-
-.scheduleDateHeader {
-  height: 50px;
-  color: #444;
-  padding-left: 23px;
-  border-bottom: 1px solid black;
-}
-
-.scheduleItem {
-  composes: staffCard;
-  display: flex;
-  height: 60px;
-  font-size: 16px;
-  padding-left: 23px;
-  color: #444;
-}
-
-.scheduleItemWide {
-  composes: scheduleItem;
-  height: 75px;
-}
-
-.scheduleItemTime {
-  padding-top: 14px;
-}
-
-.scheduleItemActivity {
-  composes: OTDProgramDesc;
-  padding-top: 14px;
-  margin-left: 50px;
-}
-
-.scheduleBox {
-  height: 400px;
-}
-
-/* End schedule page */
 
 @media (min-width: 1025px) {
   .dropDownUl {
@@ -1058,7 +463,7 @@ li {
 }
 
 @media (max-width: 1024px) {
-  .appBarNav, .appBarExtra {
+  .appBarNav {
     display: none;
   }
 
@@ -1153,20 +558,4 @@ li {
   height: 100%;
   padding: 20px;
   padding-top: 40px;
-}
-
-@media (max-width: 600px) {
-
-  .speakerDetail {
-    margin-left: 20px;
-  }
-
-  .speakerDetail {
-    margin-left: 20px;
-    width: 380px;
-  }
-
-  .scheduleItem {
-    height: 80px;
-  }
 }

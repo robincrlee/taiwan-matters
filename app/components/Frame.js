@@ -11,11 +11,10 @@ import smallLogo from '../images/logo_small.png';
 import Container from 'muicss/lib/react/container';
 import Dropdown from 'muicss/lib/react/dropdown';
 import DropdownItem from 'muicss/lib/react/dropdown-item';
-import social_facebook from '../images/social-facebook.png';
-import social_instagram from '../images/social-instagram.png';
-import social_youtube from '../images/social-youtube.png';
-
-import { toAbsPath, getRelPath } from '../utils'
+import socialFacebook from '../images/social-facebook.png';
+// TODO: instagram and youtube links avaialable?
+import socialInstagram from '../images/social-instagram.png';
+import socialYoutube from '../images/social-youtube.png';
 
 export default class Frame extends React.Component {
   constructor(props) {
@@ -33,17 +32,14 @@ export default class Frame extends React.Component {
 
   render() {
     const { children } = this.props;
-    const langPath = this.props.lang;
-    const lang = langPath || "en";
-    const relPath = getRelPath(langPath, this.props.location.pathname);
     const viewPortWidth = window.innerWidth;
     return (
       <div>
-        <Appbar className={styles.bar}>
+        <Appbar>
           <div className={styles.headerContainer}>
             <Row>
               <Col md="6">
-                <Link to={toAbsPath(langPath, "")}>
+                <Link to="/">
                   <img src={logo} className={styles.appBarLogo}/>
                 </Link>
                 <span
@@ -54,11 +50,11 @@ export default class Frame extends React.Component {
                 </span>
               </Col>
               <Col md="4" className={styles.appBarNav}>
-                <Link to={toAbsPath(langPath, "about")} className={styles.navLink} activeClassName={styles.navLinkSelected}>About</Link>
-                <Link to={toAbsPath(langPath, "facts")} className={styles.navLink} activeClassName={styles.navLinkSelected}>Facts</Link>
-                <Link to={toAbsPath(langPath, "about")} className={styles.socialIcon}><img src={social_facebook} className={styles.appBarLogo}/></Link>
-                <Link to={toAbsPath(langPath, "facts")} className={styles.socialIcon}><img src={social_instagram} className={styles.appBarLogo}/></Link>
-                <Link to={toAbsPath(langPath, "facts")} className={styles.socialIcon}><img src={social_youtube} className={styles.appBarLogo}/></Link>
+                <Link to="about" className={styles.navLink} activeClassName={styles.navLinkSelected}>About</Link>
+                <Link to="facts" className={styles.navLink} activeClassName={styles.navLinkSelected}>Facts</Link>
+                <a href="https://www.facebook.com/KeepTaiwanFree/" target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
+                <a href="#" className={styles.socialIcon}><img src={socialInstagram} className={styles.appBarLogo}/></a>
+                <a href="#" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
               </Col>
             </Row>
           </div>
@@ -66,8 +62,13 @@ export default class Frame extends React.Component {
         {
           this.state.showMenu &&
           <ul className={styles.dropDownUl}>
-            <li className={styles.headerItemResponsive}><Link to={toAbsPath(langPath, "about")} onClick={this.handleHamburgerClick}>About</Link> </li>
-            <li className={styles.headerItemResponsive}><Link to={toAbsPath(langPath, "facts")} onClick={this.handleHamburgerClick}>Facts</Link> </li>
+            <li className={styles.headerItemResponsive}><Link to="about" onClick={this.handleHamburgerClick}>About</Link></li>
+            <li className={styles.headerItemResponsive}><Link to="facts" onClick={this.handleHamburgerClick}>Facts</Link></li>
+            <li className={styles.headerItemResponsive}>
+                <a href="https://www.facebook.com/KeepTaiwanFree/" target="_blank" className={styles.socialIcon}><img src={socialFacebook} className={styles.appBarLogo}/></a>
+                <a href="#" className={styles.socialIcon}><img src={socialInstagram} className={styles.appBarLogo}/></a>
+                <a href="#" className={styles.socialIcon}><img src={socialYoutube} className={styles.appBarLogo}/></a>
+            </li>
           </ul>
         }
 	{children}
