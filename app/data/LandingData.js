@@ -27,10 +27,11 @@ const LandingData = Object.freeze({
     zh: "了解詳情"
   },
   links: {
-      fbEventMarch: "https://www.facebook.com/events/854089958084652",
+      fbEventMarch:"https://www.facebook.com/events/854089958084652",
       fbEventArts:"https://www.facebook.com/events/1286297154848937",
       fbEventTalks:"https://www.facebook.com/events/123057211679062/",
-      EventBriteBoba:"https://www.eventbrite.com/e/hello-taiwan-bubble-tea-festival-tickets-37496157015?aff=efbneb"
+      fbEventBoba:"https://www.facebook.com/events/126055421368371"
+  
   },
   downloadPaperForm: {
     en: "Download Form",

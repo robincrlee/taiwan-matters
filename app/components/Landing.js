@@ -96,7 +96,7 @@ export default class Landing extends React.Component {
                 <h1 className={styles.heading}>EVENTS</h1>
                 <h2>NYC Bubble Tea Festival</h2>
                 <p>Hello Taiwan Bubble Tea Festival is the first celbration of its kind in NYC for the delicious tasting chewy bobbles & bobas in freshly brewed tea with giant straws!</p>
-              <a className={styles.mainBtn} href={LandingData.links.EventBriteBoba} target="_blank">GET INVOLVED</a>
+              <a className={styles.mainBtn} href={LandingData.links.fbEventBoba} target="_blank">GET INVOLVED</a>
               </Col>
             </Row>
           </Container>
