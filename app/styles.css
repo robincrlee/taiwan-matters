@@ -173,8 +173,7 @@ li {
 
 
 .landingBody {
-  text-align: left;
-  margin-bottom: 60px;
+  margin: 30px auto;
 }
 
 .landingBody h2 {
@@ -221,6 +220,12 @@ li {
   border: 1px solid #ccc;
   margin: 20px 15px;
   padding: 10px 15px;
+}
+
+.eventDetails a.mainBtn {
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 8px 10px;
 }
 
 .eventDetails p {
@@ -270,7 +275,8 @@ li {
   margin-bottom: 40px;
 }
 
-.mainBtn {
+.mainBtn,
+.mainBtn:hover {
   background-color: #44b696;
   color: #fff;
   display: inline-block;

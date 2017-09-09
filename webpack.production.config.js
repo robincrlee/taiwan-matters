@@ -21,7 +21,14 @@ module.exports = {
 				test: /\.jpe?g$|\.gif$|\.pdf$|\.docx|\.ttf|\.png$|\.svg$/i,
         loader: 'url-loader',
         query: { limit: 20000 }
-			}
+			},
+			{
+        test: /\.html$/,
+        loader: 'html-loader?attrs[]=video:src'
+      }, {
+        test: /\.mp4$/,
+        loader: 'url?limit=10000&mimetype=video/mp4'
+      }
 		]
 	},
 	plugins: [

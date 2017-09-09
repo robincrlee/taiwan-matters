@@ -12,6 +12,7 @@ import styles from '../styles.css';
 import eventMarch from '../images/event-keep-taiwan-free-march.jpg'
 import eventTWMatters from '../images/event-taiwan-matters.jpg'
 import eventBubbleTea from '../images/event-bubble-tea.jpg'
+import movementVideo from '../videos/keep-tw-free-bg.mp4'
 import GoogleMapReact from 'google-map-react';
 
 import LandingData from '../data/LandingData'
@@ -26,19 +27,25 @@ export default class Landing extends React.Component {
         <div className={styles.landingHero}>
           <Container className={styles.heroCopy}>
             <Col md="10" md-offset="1">
-              <h1>2017 United Nations Membership for Taiwan/Keep Taiwan Free March</h1>
-              <p>All members and allies of the Taiwanese community are invited to join this year’s UN for Taiwan/ Keep Taiwan Free rally!</p>
+              <h1>2017 United Nations Membership for Taiwan / Keep Taiwan Free March</h1>
+              <p>All members and allies of the Taiwanese community are invited to join this year's UN for Taiwan / Keep Taiwan Free rally!</p>
               <a className={styles.mainBtn} href={LandingData.links.fbEvent} target="_blank">GET INVOLVED</a>
             </Col>
           </Container>
         </div>
         <Container className={styles.landingBody}>
           <Row>
-            <Col md="10" md-offset="1">
+            <Col md="4">
               <h1 className={styles.heading}>ABOUT THE MOVEMENT</h1>
               <h2>Keep Taiwan Free</h2>
               {LandingData.welcomeMessage}
               <Link to="about" className={styles.mainBtn} target="_blank">LEARN MORE</Link>
+            </Col>
+            <Col md="6">
+              <video class={styles.eventVideo} width="770" height="434" autoPlay loop>
+                <source src={movementVideo} type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
             </Col>
           </Row>
         </Container>
@@ -86,9 +93,9 @@ export default class Landing extends React.Component {
                     <p className={styles.eventNotes}>United Nations Plaza</p>
                   </section>
                 </section>
-                <p>This year, in order for the world to see Taiwan, a group of Taiwanese architecture designer decided to team up with activists who has long advocated for Taiwan's membership in the UN on an art installation located directly across the UN's office, titled " Taiwan Matters". The installation is consisted of six parts, all of which imitate the geographical landscape of Taiwan. Visitors will be able to move around the pieces freely, enabling the art installation a new perspective, creating new spaces and functionality.</p>
+                <p>This year, in order for the world to see Taiwan, a group of Taiwanese architecture designer decided to team up with activists who has long advocated for Taiwan’s membership in the UN on an art installation located directly across the UN's office, titled " Taiwan Matters". The installation is consisted of six parts, all of which imitate the geographical landscape of Taiwan. Visitors will be able to move around the pieces freely, enabling the art installation a new perspective, creating new spaces and functionality.</p>
               <a className={styles.mainBtn} href={LandingData.links.fbEvent} target="_blank">EXPLORE</a>
-              <p>On September 16th, from 5:30 to 6:30pm, after the Rally for Taiwan in UN, Cafe Philo will also invite Taiwanese speakers from all kinds of communities, and background, to share their story and their experiences.</p>
+              <p>On <strong>September 16th, from 5:30 to 6:30pm</strong>, after the Rally for Taiwan in UN, Cafe Philo will also invite Taiwanese speakers from all kinds of communities, and background, to share their story and their experiences.</p>
               <a className={styles.mainBtn} href={LandingData.links.fbEvent} target="_blank">GET INVOLVED</a>
               </Col>
               <Col md="4" className={styles.eventBox}>
