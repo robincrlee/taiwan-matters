@@ -276,6 +276,7 @@ li {
 }
 
 .mainBtn,
+.mainBtn:visited,
 .mainBtn:hover {
   background-color: #44b696;
   color: #fff;
