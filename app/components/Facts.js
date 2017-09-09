@@ -14,10 +14,12 @@ import FactsData from '../data/FactsData'
 export default class Contact extends React.Component {
   render() {
     const factCard = (factItem, i) => (
-      <Col md="4" className={styles.factCard}>
+      <Col md="4" key={i} className={styles.factCard}>
         <div className={styles[`factCard${i}`]}>
           <img className={styles.factCardImg} src={factItem.cardImg} />
-          <p className={styles.factDesc}>{factItem.description.join(' ')}</p>
+          <p className={styles.factDesc}>
+            {factItem.description.map((sent, i) => <span key={i} style={i % 2 === 0 ? {} : {fontWeight: '500'}}>{sent} </span>)}
+          </p>
         </div>
       </Col>
     );

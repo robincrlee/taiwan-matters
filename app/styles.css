@@ -1,18 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700';
 
 html, body {
   font-style: 16px;
-}
-
-@font-face {
-  font-family: 'DIN-Condensed';
-  src: url('./fonts/DIN-Condensed-Bold.ttf'); /* Safari, Android, iOS */
- }
-
-@font-face {
-  font-family: 'DIN-Alternate';
-  src: url('./fonts/DIN-Alternate-Bold.ttf'); /* Safari, Android, iOS */
 }
 
 body {
@@ -44,8 +34,8 @@ li {
 .navLink {
   margin: 0 20px;
   color: #444;
+  font-weight: 400;
   padding-bottom: 22px;
-  font-family: 'DIN-Alternate';
   text-transform: uppercase;
 }
 
@@ -97,7 +87,8 @@ li {
   text-align: center;
   color: #FFF;
   padding: 100px 0;
-  font-size: 22px; 
+  font-size: 22px;
+  font-weight: 200;
 }
 
 .landingHero {
@@ -106,7 +97,6 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-weight: lighter;
 }
 
 .aboutHero {
@@ -115,9 +105,9 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-weight: 300;
   line-height: 1.27;
 }
+
 .heroCopy h1{
   font-size: 46px;
   line-height: 1.2;
@@ -178,7 +168,7 @@ li {
 
 .landingBody h2 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 0 20px;
 }
 
@@ -379,7 +369,7 @@ li {
 
 .infoLabel {
   color: #44b696;
-  font-weight: 600;
+  font-weight: 400;
   margin: 10px 0 5px;
 }
 
@@ -606,7 +596,7 @@ li {
   font-family: Montserrat;
   color: white;
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 400;
   margin-top: 65px;
   margin-bottom: 50px;
   line-height: 36px;
@@ -626,7 +616,7 @@ li {
   font-family: Montserrat;
   color: black;
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 400;
   margin-top: 65px;
   margin-bottom: 50px;
   line-height: 36px;
@@ -666,7 +656,6 @@ li {
 }
 
 .factCard {
-  /*width: 370px;*/
   margin: 15px 0;
   height: 590px;
 }
@@ -677,8 +666,11 @@ li {
 }
 
 .factDesc {
+  font-size: 16px;
+  font-weight: 200;
   padding: 15px;
   color: #fff;
+  line-height: 1.5;
 }
 
 .factCard1 {
@@ -710,4 +702,6 @@ li {
   composes: factCard;
   background-color: #02558b;
 }
+
+/* End Facts page */
 
